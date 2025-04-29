@@ -1,0 +1,24 @@
+/*
+ * Código proposto por IA – ChatGPT 4.o
+ * a partir das instruções previstas no ficheiro MOCC.txt
+ *
+ * (nota: os comentários estavam com // )  
+ *
+ * Este código lê dois inteiros do utilizador, calcula a sua soma
+ * e imprime o resultado. Usa as funções read, writes e write.
+ */
+
+/*// Protótipos de funções */
+void main(void);
+
+void main(void) {
+    int a, b, soma;
+int __tmp__0[] = {73,110,116,114,111,100,117,122,97,32,100,111,105,115,32,105,110,116,101,105,114,111,115,58,32,0};
+    writes(__tmp__0);
+    a = read();
+    b = read();
+    soma = a + b;
+int __tmp__1[] = {82,101,115,117,108,116,97,100,111,58,32,0};
+    writes(__tmp__1);
+    write(soma);
+}

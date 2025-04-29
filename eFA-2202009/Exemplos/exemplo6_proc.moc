@@ -1,0 +1,29 @@
+/* 
+ * Código proposto por IA - Llama 3.3
+ * a partir das instruções previstas no ficheiro MOC.md 
+ * (nota: não assumiu a necessidade de prototipagem e os comentários estavam com // ) 
+ *
+ * Este código declara uma função f que recebe um int e retorna o seu dobro, 
+ * e uma função main que chama f com o valor 5 
+ * e imprime o resultado usando writes e write.
+ * 
+ */
+
+/* Protótipos de funções adicionados por mim */
+int f(int x);
+void main(void);
+
+
+void main(void) {
+  int a = 5;
+  int b = f(a);
+int __tmp__0[] = {79,32,118,97,108,111,114,32,100,101,32,98,32,233,58,32,0};
+  writes(__tmp__0);
+  write(b);
+int __tmp__1[] = {92,110,0};
+  writes(__tmp__1);
+}
+
+int f(int x) {
+  return x * 2;
+}

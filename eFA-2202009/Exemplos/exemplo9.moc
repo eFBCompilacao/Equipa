@@ -1,0 +1,22 @@
+/*
+ * Código proposto por IA – ChatGPT 4.o
+ * a partir das instruções previstas no ficheiro MOCC.txt
+ *
+ * (nota: os comentários estavam com // )  
+ *
+ * Este código lê dois inteiros do utilizador, calcula a sua soma
+ * e imprime o resultado. Usa as funções read, writes e write.
+ */
+
+/*// Protótipos de funções */
+void main(void);
+
+void main(void) {
+    int a, b, soma;
+    writes("Introduza dois inteiros: ");
+    a = read();
+    b = read();
+    soma = a + b;
+    writes("Resultado: ");
+    write(soma);
+}

@@ -1,0 +1,25 @@
+/*
+ * Código proposto por IA – ChatGPT 4.o
+ * a partir das instruções previstas no ficheiro MOCC.txt
+ *
+ * Este código tenta usar a variável `a` sem a declarar previamente.
+ * Deve gerar erro semântico.
+ */
+
+/*// Protótipos de funções */
+void main(void);
+
+void main(void) {
+    a = read();
+    write(a);
+}
+
+/* Versão corrigida
+ * 
+ *void main(void) {
+ *    int a;
+ *    a = read();
+ *    write(a);
+ *}
+ *
+ */

@@ -1,0 +1,53 @@
+/* 
+ * Código proposto por IA – ChatGPT 4.o
+ * a partir das instruções previstas no ficheiro MOCC.txt
+ *
+ * código que testa todas as formas autorizadas de funções
+ * 
+ */
+ 
+ 
+/* // Protótipos */
+int quadrado(int);
+double soma(double, double);
+void escreveVetor(int[], int);
+int valorFixo(void);
+void main(void);
+
+/* // Função com retorno int */
+int quadrado(int x) {
+    return x * x;
+}
+
+/* // Função com retorno double */
+double soma(double a, double b) {
+    return a + b;
+}
+
+/* // Função sem parâmetros */
+int valorFixo(void) {
+    return 42;
+}
+
+/* // Função com vetor como parâmetro */
+void escreveVetor(int v[], int n) {
+    int i;
+    for(i = 0; i < n; i = i + 1) {
+        write(v[i]);
+    }
+}
+
+/* // Função principal */
+void main(void) {
+    int a = 3;
+    double x = 2.5, y = 4.5;
+    int r = quadrado(a);     /* // 9 */
+    double z = soma(x, y);   /* // 7.0 */
+    int fixo = valorFixo();  /* // 42 */
+    int v[] = {10, 20, 30};
+
+    write(r);         /* // Escreve resultado do quadrado */
+    write(z);         /* // Escreve resultado da soma */
+    write(fixo);      /* // Escreve valor fixo */
+    escreveVetor(v, 3); /* // Escreve elementos do vetor */
+}

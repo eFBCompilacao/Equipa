@@ -1,0 +1,74 @@
+/* 
+ * Código proposto por IA – ChatGPT 4.o
+ * a partir das instruções previstas no ficheiro MOCC.txt
+ *
+ * código que testa todas as instruções permitidas
+ * 
+ */
+/* // Protótipos */
+int dobro(int);
+void escreveTudo(int[], int);
+void main(void);
+
+/* // Função com return */
+int dobro(int x) {
+    return x * 2;
+}
+
+/* // Função que escreve vetor */
+void escreveTudo(int v[], int n) {
+    int i;
+    for (i = 0; i < n; i = i + 1) {
+        write(v[i]);
+    }
+}
+
+/* // Função principal */
+void main(void) {
+    int a, b, c = 0;
+    int i, v[] = {1, 2, 3};
+    int nome[] = reads(); /* // lê uma string */
+    double x = 3.14, y;
+
+    /* // leitura */
+    writes("Insira dois inteiros:");
+    a = read();
+    b = read();
+
+    /* // atribuições e expressão */
+    c = a + b;
+    y = x / 2;
+
+    /* // if com else */
+    if (a > b) {
+        write(a);
+    } else {
+        write(b);
+    }
+
+    /* // if sem else */
+    if (c > 10) {
+        write(c);
+    }
+
+    /* // while */
+    i = 0;
+    while (i < 3) {
+        write(v[i]);
+        i = i + 1;
+    }
+
+    /* // for */
+    for (i = 0; i < 3; i = i + 1) {
+        v[i] = dobro(v[i]);
+    }
+
+    /* // chamada de função com vetor */
+    escreveTudo(v, 3);
+
+    /* // escrita */
+    writes(nome);     /* // escreve a string lida */
+    writec(nome[0]);  /* // escreve o primeiro carácter */
+
+    return 0; /* tem de devolver sempre alguma coisa */
+}

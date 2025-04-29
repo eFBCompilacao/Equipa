@@ -1,0 +1,33 @@
+/* 
+ * Código proposto por IA - Llama 3.3
+ * a partir das instruções previstas no ficheiro MOC.md 
+ * (nota: não assumiu a necessidade de prototipagem e os comentários estavam com // ) 
+ *
+ * Este código tem uma estrutura de controle de fluxo complexa, com:
+ *  Um for externo que itera sobre i de 0 a 4
+ *  Um while que itera enquanto i for menor que 3
+ *  Um if que verifica se o elemento v[i] é maior que 1
+ *  Um for interno que itera sobre j de 0 a 2 e imprime os elementos do vetor v.
+ * 
+ */
+
+/*// Protótipo da função adicionado por mim */
+void main(void);
+
+
+void main(void) {
+  int i, j, k;
+  for (i = 0; i < 5; i = i + 1) {
+    int v[] = {1, 2, 3};
+    while (i < 3) {
+      if (v[i] > 1) {
+        for (j = 0; j < 3; j = j + 1) {
+          write(v[j]);
+          writes(" ");
+        }
+        writes("\n");
+      }
+      i = i + 1;
+    }
+  }
+}

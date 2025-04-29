@@ -1,0 +1,23 @@
+/* 
+ * Código proposto por IA - Llama 3.3
+ * a partir das instruções previstas no ficheiro MOC.md 
+ * (nota: não assumiu a necessidade de prototipagem e os comentários estavam com // ) 
+ *
+ * Este código declara um vetor v com três elementos 
+ * e imprime cada um deles usando um ciclo for. 
+ * 
+ */
+
+/*// Protótipo da função adicionado por mim */
+void main(void);
+
+
+void main(void) {
+  int v[] = {1, 2, 3};
+  int i;
+  for (i = 0; i < 3; i = i + 1) {
+    write(v[i]);
+    writes(" ");
+  }
+  writes("\n");
+}

@@ -1,0 +1,87 @@
+/* 
+ * Código proposto por IA - Gemini 2.0
+ * a partir das instruções previstas no ficheiro MOC.md 
+ * 
+ * Este é um pequeno programa de exemplo na linguagem MOC.
+ * Ele demonstra algumas das funcionalidades da linguagem,
+ * como declaração de variáveis, operações aritméticas,
+ * condicionais, ciclos e funções de entrada/saída.
+ *  
+ * Esta IA não colocou os comentários com a regra definida, mas sim com a base do C
+ *  
+ */
+
+/* Protótipos de funções */
+int factorial(int n);
+void print_array(int v[], int size);
+
+/* Função principal */
+void main(void) {
+  int num;
+  double result;
+  int i;
+  int numbers[5];
+
+int __tmp__0[] = {73,110,116,114,111,100,117,122,97,32,117,109,32,110,250,109,101,114,111,32,105,110,116,101,105,114,111,58,32,0};
+  writes(__tmp__0);
+  num = read();
+
+  if (num >= 0) {
+    result = factorial(num);
+int __tmp__1[] = {79,32,102,97,99,116,111,114,105,97,108,32,100,101,32,0};
+    writes(__tmp__1);
+    write(num);
+int __tmp__2[] = {32,233,32,0};
+    writes(__tmp__2);
+    write(result);
+int __tmp__3[] = {92,110,0};
+    writes(__tmp__3);
+  } else {
+int __tmp__4[] = {79,32,110,250,109,101,114,111,32,105,110,116,114,111,100,117,122,105,100,111,32,110,227,111,32,233,32,112,111,115,105,116,105,118,111,46,92,110,0};
+    writes(__tmp__4);
+  }
+
+int __tmp__5[] = {65,32,105,110,116,114,111,100,117,122,105,114,32,53,32,110,250,109,101,114,111,115,32,105,110,116,101,105,114,111,115,32,110,111,32,97,114,114,97,121,58,92,110,0};
+  writes(__tmp__5);
+  for (i = 0; i < 5; i = i + 1) {
+int __tmp__6[] = {73,110,116,114,111,100,117,122,97,32,111,32,110,250,109,101,114,111,32,0};
+    writes(__tmp__6);
+    write(i + 1);
+int __tmp__7[] = {58,32,0};
+    writes(__tmp__7);
+    numbers[i] = read();
+  }
+
+int __tmp__8[] = {79,115,32,110,250,109,101,114,111,115,32,105,110,116,114,111,100,117,122,105,100,111,115,32,110,111,32,97,114,114,97,121,32,115,227,111,58,32,0};
+  writes(__tmp__8);
+  print_array(numbers, 5);
+int __tmp__9[] = {92,110,0};
+  writes(__tmp__9);
+}
+
+/* Função para calcular o factorial de um número inteiro */
+int factorial(int n) {
+  int fact = 1;
+  int i;
+
+  if (n == 0) {
+    return 1;
+  } else {
+    for (i = 1; i <= n; i = i + 1) {
+      fact = fact * i;
+    }
+    return fact;
+  }
+}
+
+/* Função para imprimir os elementos de um array de inteiros */
+void print_array(int v[], int size) {
+  int i;
+  for (i = 0; i < size; i = i + 1) {
+    write(v[i]);
+    if (i < size - 1) {
+int __tmp__10[] = {44,32,0};
+      writes(__tmp__10);
+    }
+  }
+}

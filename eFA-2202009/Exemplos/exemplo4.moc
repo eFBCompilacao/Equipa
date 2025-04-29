@@ -1,0 +1,88 @@
+/* 
+ * Código proposto por IA - Claude 3.7
+ * a partir das instruções previstas no ficheiro MOC.md 
+ * 
+ * Exemplo de código na linguagem MOC
+ * Este programa calcula o fatorial de um número
+ * e exibe alguns exemplos de uso das características da linguagem
+ */
+
+/* Protótipos de funções (obrigatoriamente antes de qualquer função) */
+int fatorial(int);
+void mostraVetor(int[], int);
+
+
+/* Função principal - ponto de entrada do programa */
+void main(void) {
+    /* Declarações variadas, demonstrando várias formas de inicialização */
+    int n = read();
+    int resultado;
+    int i;
+    int numeros[] = {1, 2, 3, 4, 5};
+    int tamanho = 5;
+    double x = 10.5;
+    int y = (int) x;  /* Exemplo de conversão de tipo */
+    int mensagem[] = {79, 108, 97, 32, 77, 117, 110, 100, 111, 33, 0}; /* "Ola Mundo!" */
+    
+    /* Escrita de uma string literal */
+    writes("Bem-vindo ao programa de fatorial em MOC");
+    
+    /* Saída de uma string como vetor de inteiros */
+    writes(mensagem);
+    
+    /* Condicional com bloco obrigatório */
+    if (n < 0) {
+        writes("Por favor, digite um número não-negativo");
+    } else {
+        /* Cálculo e exibição do resultado */
+        resultado = fatorial(n);
+        writes("O fatorial de ");
+        write(n);
+        writes(" é ");
+        write(resultado);
+    }
+    
+    /* Exemplo de um ciclo for */
+    writes("Contagem regressiva:");
+    for (i = 10; i > 0; i = i - 1) {
+        write(i);
+    }
+    
+    /* Exemplo de ciclo while e operadores lógicos */
+    i = 0;
+    while (i < tamanho && numeros[i] < 5) {
+        write(numeros[i]);
+        i = i + 1;
+    }
+    
+    /* Chamada de função com vetor */
+    mostraVetor(numeros, tamanho);
+}
+
+
+
+/* Implementação da função fatorial */
+int fatorial(int n) {
+    int resultado = 1;
+    int i;
+    
+    if (n <= 1) {
+        return 1;
+    } else {
+        for (i = 2; i <= n; i = i + 1) {
+            resultado = resultado * i;
+        }
+        return resultado;
+    }
+}
+
+/* Função que mostra os elementos de um vetor */
+void mostraVetor(int v[], int tam) {
+    int i = 0;
+    
+    writes("Elementos do vetor:");
+    while (i < tam) {
+        write(v[i]);
+        i = i + 1;
+    }
+}

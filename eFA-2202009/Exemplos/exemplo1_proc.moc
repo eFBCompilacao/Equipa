@@ -1,0 +1,44 @@
+/* VERSAO ORIGINAL */
+/* exemplo 1 -  fatorial versão recursiva */
+ int fact(int);
+ void main(void);
+ int fact (int k) {
+  if (k<=1)
+  return 1;
+  else
+  return k * fact (k-1);
+ }
+ 
+ void main(void){
+ int n;
+ writes(“Introduza inteiro: ”)
+ n = read();
+ write(fact(n));
+ }
+
+
+
+/* VERSÃO CORRIGIDA
+exemplo 1 - fatorial versao recursiva
+int fact(int);
+void main(void);
+int fact (int k)
+	{
+		if (k <= 1) {
+			return 1;
+		}
+		else 
+		{
+			return k * fact(k - 1);
+		}
+	}
+
+void main(void)
+	{
+		int n;
+int __tmp__0[] = {73,110,116,114,111,100,117,122,97,32,105,110,116,101,105,114,111,58,32,0};
+		writes(__tmp__0);
+		n = read();
+		write(fact(n));
+	}
+*/

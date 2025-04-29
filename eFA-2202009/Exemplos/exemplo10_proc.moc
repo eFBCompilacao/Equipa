@@ -1,0 +1,35 @@
+/*
+ * Código proposto por IA – ChatGPT 4.o
+ * a partir das instruções previstas no ficheiro MOCC.txt
+ *
+ * Este código tenta verificar se um número é positivo, mas 
+ * **não cumpre** a regra obrigatória de ter blocos entre chavetas `{}` 
+ * nas instruções `if` e `else`. Deve gerar erro sintático.
+ */
+
+/*// Protótipos de funções */
+void main(void);
+
+void main(void) {
+    int x;
+    x = read();
+    if (x > 0)
+        write(x);    
+    else
+        write(-x); 		
+}
+
+
+/* Versão corrigida
+ * 
+ *void main(void) {
+ *    int x;
+ *    x = read();
+ *    if (x > 0) {
+ *        write(x);
+ *    } else {
+ *        write(-x);
+ *    }
+ *}
+ *
+ */

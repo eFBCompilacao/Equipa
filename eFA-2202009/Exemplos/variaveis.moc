@@ -1,0 +1,30 @@
+/*
+ * Código proposto por IA – ChatGPT 4.o
+ * a partir das instruções previstas no ficheiro MOCC.txt
+ *
+ * código que testa todas as formas autorizadas de declaração de variáveis
+ * 
+ */
+ 
+int a, b, c[5];                /* sem inicialização (por omissão a 0) */
+double x, y, z;                /* sem inicialização
+
+int m = 1, n = 2 * m;          /* com expressão aritmética */
+double pi = 3.14, metade = pi / 2;
+
+int leitura1 = read();        /* leitura de inteiro */
+double leitura2 = read();     /* leitura de double */
+int caractere = readc();      /* leitura de carácter (ASCII) */
+int texto[] = reads();        /* leitura de string como vetor ASCII terminado em 0 */
+
+int i, j = read(), k = 3 + j, vet[] = {1, 2, 3}; /* mistura com vetor inicializado */
+
+void main(void) {
+    /* apenas para compilar e verificar árvore sintática */
+    { 
+        write(a);              /* testando variáveis simples */
+        writec(caractere);     /* escreve o carácter lido */
+        writes(texto);         /* escreve string lida */
+        writev(vet);           /* escreve vetor inicializado */
+    }
+}

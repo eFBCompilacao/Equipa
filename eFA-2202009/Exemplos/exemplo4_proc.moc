@@ -1,0 +1,95 @@
+/* 
+ * Código proposto por IA - Claude 3.7
+ * a partir das instruções previstas no ficheiro MOC.md 
+ * 
+ * Exemplo de código na linguagem MOC
+ * Este programa calcula o fatorial de um número
+ * e exibe alguns exemplos de uso das características da linguagem
+ */
+
+/* Protótipos de funções (obrigatoriamente antes de qualquer função) */
+int fatorial(int);
+void mostraVetor(int[], int);
+
+
+
+/* Função principal - ponto de entrada do programa */
+void main(void) {
+    /* Declarações variadas, demonstrando várias formas de inicialização */
+    int n = read();
+    int resultado;
+    int i;
+    int numeros[] = {1, 2, 3, 4, 5};
+    int tamanho = 5;
+    double x = 10.5;
+    int y = (int) x;  /* Exemplo de conversão de tipo */
+    int mensagem[] = {79, 108, 97, 32, 77, 117, 110, 100, 111, 33, 0}; /* "Ola Mundo!" */
+    
+    /* Escrita de uma string literal */
+int __tmp__0[] = {66,101,109,45,118,105,110,100,111,32,97,111,32,112,114,111,103,114,97,109,97,32,100,101,32,102,97,116,111,114,105,97,108,32,101,109,32,77,79,67,0};
+    writes(__tmp__0);
+    
+    /* Saída de uma string como vetor de inteiros */
+    writes(mensagem);
+    
+    /* Condicional com bloco obrigatório */
+    if (n < 0) {
+int __tmp__1[] = {80,111,114,32,102,97,118,111,114,44,32,100,105,103,105,116,101,32,117,109,32,110,250,109,101,114,111,32,110,227,111,45,110,101,103,97,116,105,118,111,0};
+        writes(__tmp__1);
+    } else {
+        /* Cálculo e exibição do resultado */
+        resultado = fatorial(n);
+int __tmp__2[] = {79,32,102,97,116,111,114,105,97,108,32,100,101,32,0};
+        writes(__tmp__2);
+        write(n);
+int __tmp__3[] = {32,233,32,0};
+        writes(__tmp__3);
+        write(resultado);
+    }
+    
+    /* Exemplo de um ciclo for */
+int __tmp__4[] = {67,111,110,116,97,103,101,109,32,114,101,103,114,101,115,115,105,118,97,58,0};
+    writes(__tmp__4);
+    for (i = 10; i > 0; i = i - 1) {
+        write(i);
+    }
+    
+    /* Exemplo de ciclo while e operadores lógicos */
+    i = 0;
+    while (i < tamanho && numeros[i] < 5) {
+        write(numeros[i]);
+        i = i + 1;
+    }
+    
+    /* Chamada de função com vetor */
+    mostraVetor(numeros, tamanho);
+}
+
+
+
+/* Implementação da função fatorial */
+int fatorial(int n) {
+    int resultado = 1;
+    int i;
+    
+    if (n <= 1) {
+        return 1;
+    } else {
+        for (i = 2; i <= n; i = i + 1) {
+            resultado = resultado * i;
+        }
+        return resultado;
+    }
+}
+
+/* Função que mostra os elementos de um vetor */
+void mostraVetor(int v[], int tam) {
+    int i = 0;
+    
+int __tmp__5[] = {69,108,101,109,101,110,116,111,115,32,100,111,32,118,101,116,111,114,58,0};
+    writes(__tmp__5);
+    while (i < tam) {
+        write(v[i]);
+        i = i + 1;
+    }
+}
