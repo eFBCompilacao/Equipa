@@ -1,0 +1,18 @@
+// exemplo 3
+int main() {
+    int x, y;
+    double z;
+
+    x = 5;
+    y = 10;
+    z = x + y * 2;
+
+    if (x < y) {
+        write(x);
+    } else {
+        write(y);
+    }
+
+    return;
+}
+
