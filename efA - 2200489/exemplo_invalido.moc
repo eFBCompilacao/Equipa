@@ -1,0 +1,9 @@
+x = 10;
+
+y = 4;
+
+void main(int k){
+    if (k<=1){
+        return;
+    }
+}
